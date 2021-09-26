@@ -1,0 +1,463 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  z-index: -50;
+  background-color: black;
+  /* background-image: linear-gradient(45deg, black, transparent); */
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+@media (min-width: 93.75em) {
+  html {
+    font-size: 110%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 61.25em) {
+  html {
+    font-size: 58%;
+  }
+}
+@media (max-width: 28.75em) {
+  html {
+    font-size: 55%;
+  }
+}
+
+h1,
+h2 {
+  font-family: Roboto Condensed, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.2rem;
+}
+
+.name {
+  /* font-family: Roboto Condensed, sans-serif; */
+  font-size: 3rem;
+  display: block;
+  text-align: center;
+  color: lightyellow;
+  font-family: monospace;
+  padding-left: 14vw;
+}
+.myTag {
+  font-size: 1.5rem;
+  font-style: italic;
+  padding-top: 2vh;
+}
+#nameBackground {
+  position: absolute;
+  top: 0;
+  left: +16vw;
+  z-index: -1;
+  height: 7rem;
+  width: 85.5vw;
+  transform: skewX(10deg);
+  /* background-color: grey; */
+  /* background-image: radial-gradient(#756767, #5d4444); */
+  /* box-shadow: 0px 0 13px 23px #deca19; */
+  background-color: black;
+}
+
+@media (max-width: 650px) {
+  .name {
+    padding-left: 18vw;
+  }
+}
+@media (max-width: 400px) {
+  .name {
+    font-size: 2.2rem;
+  }
+  .myTag {
+    font-size: 1.8rem;
+  }
+}
+
+#menu {
+  height: 3rem;
+  width: 84vw;
+  position: absolute;
+  top: 7rem;
+  left: 16.3vw;
+}
+.menuList {
+  height: 7vh;
+  width: inherit;
+  /* background-color: darkgrey; */
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  font-size: 3rem;
+  padding-bottom: 1vh;
+  font-family: monospace;
+}
+
+.menuList a {
+  height: 6vmin;
+  width: 21vw;
+  display: block;
+  font-size: 1.7rem;
+  color: black;
+  text-decoration: auto;
+  /* border: 2px solid black; */
+  border: 2px solid grey;
+  color: white;
+  margin: auto;
+  text-align: center;
+  padding-top: 1vh;
+  background-color: black;
+  /* background-color: grey; */
+  /* background-image: radial-gradient(#8b7676, #524242); */
+  margin-botttom: 0;
+  transition: all 0.5s;
+}
+.menuList a:hover {
+  background-image: none;
+  color: black;
+  background-color: yellow;
+  border: 2px solid yellow;
+}
+
+li {
+  margin-top: 0;
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  /* border: 2px solid black; */
+  /* background-color: dimgrey; */
+}
+
+/* @media (max-width: 500px) {
+    .menuList {
+      flex-direction: column;
+    }
+  } */
+
+@media (min-width: 1300px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (max-width: 700px) {
+  .menuList a {
+    height: 10vmin;
+  }
+}
+@media (min-width: 1500px) {
+  .menuList a {
+    font-size: 2.5rem;
+  }
+
+  my-name {
+    font-size: 3rem;
+  }
+
+  #nameBackground {
+    height: 9rem;
+  }
+  #menu {
+    top: 9rem;
+  }
+  .myTag {
+    font-size: 2.3rem;
+  }
+  .name {
+    font-size: 3.5rem;
+  }
+}
+#myProjects {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 4vw;
+  z-index: -40;
+  background-color: yellow;
+  transform: skewX(9deg);
+  /* background-image: radial-gradient(yellow, yellow); */
+}
+#Skills {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 2vw;
+  z-index: -30;
+  background-color: #676464;
+  /* transform: skewX(0deg); */
+  /* box-shadow: 0px 0 23px 23px #caca10; */
+}
+#education-work {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 6vw;
+  z-index: -20;
+  background-color: yellow;
+  /* box-shadow: 0px 0 24px 24px #5d5151; */
+  /* transform: skewX(9deg); */
+}
+#myContacts {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 11vw;
+  z-index: -10;
+  background-color: #a49f9f;
+  /* transform: skewX(9deg); */
+  box-shadow: 0px 0 24px 12px #5d5151;
+}
+#details {
+  height: 8vh;
+  width: auto;
+  background-color: transparent;
+  /* border: 1px solid black; */
+  position: fixed;
+  top: 35vh;
+  left: 12.5vw;
+  z-index: 10;
+  font-family: monospace;
+  /* font-style: italic; */
+  transform: skewX(-9deg);
+  font-size: 2rem;
+  text-align: center;
+  /* border-radius: 20px; */
+  z-index: -40;
+}
+#projectprojectGridsList {
+  height: 44vh;
+  width: 68vw;
+  background-color: yellow;
+  border: 2px solid black;
+  position: fixed;
+  top: 48vh;
+  left: 5vw;
+  /* transform: skewX(-9deg); */
+  display: flex;
+}
+
+#projectGrid {
+  height: 44vh;
+  width: 68vw;
+  background-color: yellow;
+  /* border: 2px solid black; */
+  position: fixed;
+  top: 48vh;
+  left: 5vw;
+  /* transform: skewX(-9deg); */
+  display: flex;
+  z-index: -40;
+}
+
+#projectsList1 {
+  height: 44vh;
+  /* width: 34vw; */
+  width: 68vw;
+  background-color: yellow;
+  /* border: 2px solid black; */
+  display: flex;
+  font-size: 2.5rem;
+  font-style: italic;
+  color: white;
+  font-family: fantasy;
+  /* -webkit-text-stroke-width: 2px; */
+  /* -webkit-text-stroke-color: black; */
+}
+#projectsList2 {
+  height: 44vh;
+  width: 34vw;
+  /* background-color: yellow; */
+  /* border: 2px solid black; */
+  display: flex;
+}
+#project1 {
+  height: 39vh;
+  width: 17vw;
+  /* background-color: black; */
+  border: 2px solid black;
+  background-image: url("chevyTruck.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 5vh;
+  background-color: black;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+#project2 {
+  height: inherit;
+  width: 50%;
+  /* background-color: rgb(0, 255, 42); */
+  border: 2px solid black;
+}
+#project3 {
+  height: inherit;
+  width: 50%;
+  /* background-color: rgb(0, 47, 255); */
+  border: 2px solid black;
+}
+#project4 {
+  height: inherit;
+  width: 50%;
+  /* background-color: rgb(255, 157, 0); */
+  border: 2px solid black;
+}
+#chevLogo {
+  height: 22%;
+  width: 18%;
+  /* background-color: black; */
+  /* border: 2px solid black; */
+  background-image: url("logo1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -2vh;
+  left: -3vw;
+  transform: skewX(-16deg);
+}
+
+@media (max-width: 800px) {
+  #projectGrid {
+    flex-direction: column;
+  }
+  #projectsList1 {
+    height: 22vh;
+    width: 68vw;
+  }
+  #projectsList2 {
+    height: 22vh;
+    width: 68vw;
+  }
+}
+
+.chevTopics {
+  height: inherit;
+  width: 51vw;
+  /* background-color: red; */
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.chevTopics a {
+  display: block;
+  /* margin-top: 8vh; */
+  border: 2px solid black;
+  font-size: 2rem;
+  background-color: black;
+  color: white;
+  font-family: fantasy;
+  font-style: italic;
+  text-decoration: none;
+  padding-left: 4vw;
+  /* border: 2px solid red; */
+  height: 8vh;
+  text-align: center;
+  padding-top: 2vh;
+}
+
+.skillsContainer {
+  height: 55vh;
+  width: 60vw;
+  border: 2px solid black;
+  /* background-color: red; */
+  position: absolute;
+  top: 40vh;
+  left: 13vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  transform: skewX(-9deg);
+}
+
+.skill {
+  height: 100%;
+  width: auto;
+  /* background-color: yellow; */
+  border: 2px solid black;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-family: monospace;
+  padding-left: 2vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+#html {
+  background-image: url("htmlLogo.png");
+}
+#css {
+  background-image: url("css3.png");
+}
+#bootstrap {
+  background-image: url("boot5.png");
+}
+#javascript {
+  background-image: url("js.png");
+}
+#react {
+  background-image: url("react.png");
+}
+#git {
+  background-image: url("git.png");
+}
+#education {
+  height: 20vh;
+  width: 60vw;
+  /* background-color: red; */
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 40vh;
+  left: 5vw;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: monospace;
+}
+#rvLogo {
+  height: 19vh;
+  width: 12vw;
+  /* background-color: red; */
+  /* border: 2px solid black; */
+  position: absolute;
+  top: -7vh;
+  left: 62vw;
+  transform: skewX(-9deg);
+  background-image: url("rv.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#work {
+  height: 20vh;
+  width: 60vw;
+  /* background-color: red; */
+  /* border: 2px solid black; */
+  position: absolute;
+  top: 70vh;
+  left: 5vw;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: monospace;
+}
