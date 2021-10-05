@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="portfolio.css" />
     <title>My Portfolio</title>
   </head>
@@ -17,72 +18,92 @@
       <div id="menu">
         <ul class="menuList">
           <li>
-            <a href="#myProjects" style="border-radius: 0px 0px 0px 34px"
-              >my Projects</a
-            >
+            <div id="tagMyProjects"  class="categories" style="border-radius: 0px 0px 0px 34px"
+            onmouseover="tagMyProjectsF()" onmouseout="tagMyProjectsR()" onclick="sp()">my Projects</div>
           </li>
           <li>
-            <a href="#Skills" style="width: 16vw">Skills</a>
+            <div id="tagSkills"  class="categories"
+            onmouseover="tagSkillsF()" onmouseout="tagSkillsR()" onclick="ss()">Skills</div>
           </li>
           <li>
-            <a href="#education-work" style="width: 26vw">Education & Work</a>
+            <div id="tagEduWork"  class="categories"
+            onmouseover="tagEduWorkF()" onmouseout="tagEduWorkR()" onclick="se()">Education & Work</div>
           </li>
           <li>
-            <a href="#myContacts">Contacts</a>
+            <div id="tagContacts"  class="categories"
+            onmouseover="tagContactsF()" onmouseout="tagContactsR()" onclick="sc()">Contacts</div>
           </li>
         </ul>
       </div>
     </nav>
 
     <div id="myProjects">
-            <div id="details">An automobile website like never before</div>
-             <div id="projectGrid">
-        <div id="projectsList1">
-          <div id="project1">
-            CHEVROLET automobiles
-            <div id="chevLogo"></div>
-          </div> 
-          
-<ul class="chevTopics">
-         <div>
-             <a href="#" target="_blank">COMPLETE WEBSITE</a>
-         </div>        
-          <div>
-            <a href="#" target="_blank">CUSTOMIZE &nbsp; truck paint & parts</a>
-          </div>
-          <div>
-            <a href="#" target="_blank">180deg view & uncovering the Engine</a>
-          </div>
-          
-</ul>
-          <!-- <div id="project2"></div>
-        </div>
-        <div id="projectsList2">
-          <div id="project3"></div>
-          <div id="project4"></div>
-        </div>
-        -->
-      </div>
-    </div>
-    <div id="Skills">
+            <div id="details">My Best Projects 
+              <span style="font-style: italic; font-size: 1.3rem; text-align: left; display: none;"> &nbsp;&nbsp;&nbsp; &nbsp; ( hit F11 - try viewing in full screen mode)</span>
+            </div>
+              <div id="listA">
+                <a href="https://shaikmuzammil-7segment-display.netlify.app/" target="_blank"><div id="project1"  class="projectTile">7-SEGMENT <br> DISPLAY </div></a>
+                <div id="project2"  class="projectTile" onclick="enterChev()">  CHEVROLET <br> AUTOMOBIL</div>
+                <a href="https://shaikmuzammil-bar-graph-sorting.netlify.app/" target="_blank"><div id="project3"  class="projectTile">SORTING <br>BAR GRAPHS </div></a>
+                <a href="https://shaikmuzammil-portfolio.netlify.app/" target="_blank"><div id="project4"  class="projectTile">MY <br> PORTFOLIO</div></a>
+               <a href="https://shaikmuzammil-interactive-interiors.netlify.app/"  target="_blank"> <div id="project5"  class="projectTile">interactive<br> interiors 
+                <p id="mediumLevel">other project</p>
+              </div></a>
+              </div>
+                <div id="listB">
+                    <div id="backBtn"  class="projectTile1" onclick="exitChev()"><i class="fa fa-arrow-left fa-lg" style="font-style: italic;"></i></div>
+                    <div id="project11"  class="projectTile1"></div>
+                    <a href="https://shaikmuzammil-chevrolet-fullwebpage.netlify.app/" target="_blank"><div id="project21" class="projectTile1">FULL <br>WEBSITE </div></a>
+                    <a href="https://shaikmuzammil-chev-180deg-view-and-uncover-engine.netlify.app/" target="_blank"><div id="project31" class="projectTile1">180deg VIEW<br> & LOOK <br>INSIDE HOOD</div></a>
+                      <a href="https://shaikmuzammil-chev-custom-paint-and-parts.netlify.app/" target="_blank"><div id="project41" class="projectTile1">CUSTOMIZE <br> PAINT & PARTS</div></a>
+                </div>
+
+         
+    <div id="skillSlide">
+      <div id="Skills">
         <div class="skillsContainer">
             <div id="html" class="skill"></div>
-        <div id="css" class="skill"></div>
-        <div id="bootstrap" class="skill"></div>
-        <div id="javascript" class="skill"></div>
+              <div id="css" class="skill"></div>
+              <div id="bootstrap" class="skill"></div>
+            <div id="javascript" class="skill"></div>
         <div id="react" class="skill"></div>
         <div id="git" class="skill"></div>
         </div>
     </div>
-    <div id="education-work">
-        <div id="education">Bachelor on Engineering in Electrical and Electronics Engineering from R.V College of Engineering , Mysore Road , Bangalore - 560059
+    </div>
+    <div id="eduWorkSlide">
+      <div id="education-work">
+        <div id="education">&#9737;  &nbsp;Bachelor on Engineering in Electrical and Electronics Engineering from R.V College of Engineering , Mysore Road , Bangalore - 560059
             <div id="rvLogo"></div>
 
         </div>
-        <div id="work">Electrical Engineering - <br> 4 years experience in Sponge Iron & Power Plant Industry
-        <br><br>Willing to change my career to IT industry insearch of creative and competitive work environment. 
+        <div id="work">
+         <br> &#9737;  &nbsp;Electrical Engineering Work Experience- <br> 4 years experience in Sponge Iron & Power Plant Industry
+        <br><br>&#9737;  &nbsp;Willing to change my career to IT industry insearch of creative and competitive work environment. 
     </div>
     </div>
-    <div id="myContacts"></div>
+    </div>
+    <div id="contactsSlide">
+      <div id="myContacts">
+        <div id="education1">
+          <p>
+            &#8500;  &nbsp;<i class="fa fa-phone fa-lg" style="font-style: italic;"></i> &nbsp; &nbsp; +91 889-234-1106
+          </p>
+          <br>
+          <p>
+            &#8500;  &nbsp;<i class="fa fa-envelope fa-lg" style="font-style: italic;"></i> &nbsp;&nbsp; muzammil.eee321@gmail.com
+        </p>
+        <br>
+          <p>
+            &#8500;  &nbsp;<i class="fa fa-github-square fa-lg" style="font-style: italic;"></i>&nbsp; &nbsp; <a href="https://github.com/ShaikMuzammil-git" target="_blank"><u style="color: blue;">https://github.com/ShaikMuzammil-git</u></a>
+        </p>
+        <br>
+          <p>
+            &#8500;  &nbsp;<i class="fa fa-linkedin fa-lg" style="font-style: italic;"></i>&nbsp; &nbsp; <a href="https://www.linkedin.com/in/shaik-muzammil321/" target="_blank"><u style="color: blue;">https://www.linkedin.com/in/shaik-muzammil321/</u></a>
+        </p>
+      </div>
+      </div>
+    </div>
+    <script src="portfolio.js"></script>
   </body>
 </html>
